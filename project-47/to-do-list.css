@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main article{
+    box-shadow: 0px 0px 5px 1px gray;
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 120px;
+    width: 380px;
+}
+main header{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+main form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form input[type='text']{
+    flex: 1;
+    padding: 4px;
+    border: none;
+    background: #e6e6e6;
+    border-radius: 5px 0px 0px 5px;
+    outline-color:#5fb8ff ;
+}
+form .submit{
+    background: #5fb8ff;
+    border: none;
+    padding: 4px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+form input[type='text']::placeholder{
+    padding-left: 5px;
+}
+.btn-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn-holder .clear{
+    border: none;
+    background: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: brown;
+}
+.main-holder-for-tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.main-holder-for-tasks p{
+    flex: 1;
+}
+.btn-div-holder{
+    display: flex;
+    column-gap: 7px;
+    padding-right: 5px;
+}
+.btn-div-holder button{
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.btn-div-holder .fa-trash{
+    color: red;
+}
+.btn-div-holder .fa-pen-to-square{
+    color: green;
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+.main p{
+    min-width: 200px;
+    min-height: 50px;
+    background: #f2f2f2;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.main button{
+    cursor: pointer;
+    margin: 10px 0px;
+    border: none;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}

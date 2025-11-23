@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+main .btn-holder button{
+    background: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 3px 25px;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+main .btn-holder button:not(:last-child){
+    margin-right: 30px;
+}
+.btn-holder{
+    text-align: center;
+}
+.pictures-container{
+    width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.pictures-container img{
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+.main-holder {
+    position: relative;
+}
+.main-holder .index-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    transform: translate(-50%,-50%);
+}

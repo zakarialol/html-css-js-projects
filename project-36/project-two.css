@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .second-main-div{
+    text-align: center;
+}
+main .counter-text{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 30px;
+}
+main .count-nbr{
+    font-weight: bold;
+    font-size: 60px;
+    margin: 15px 0px;
+    display: block;
+}
+#btn input[type='button']{
+    border: solid 1px black;
+    font-size: 10px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+#btn input[type='button']:hover{
+    color: white;
+    background-color: black;
+    transition-duration: .5s;
+    
+}
+
+/* @keyframes btn {
+        from{
+            color: white;
+            background-color: black;
+        }
+        to{
+            color: white;
+            background-color: gray;
+        }
+}  */

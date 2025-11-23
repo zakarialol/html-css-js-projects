@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --font-size-14px : 14px;
+}
+main{
+    height: 100vh;
+    align-content: center;
+}
+section{
+    margin: 0 auto;
+    width: 600px;
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 5px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    background: white;
+    padding: 6px 10px;
+    border-radius: 3px
+}
+.SubmitAnswer{
+    width: 100%;
+    background: #008eff;
+    padding: 5px 5px;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 18px;
+    word-spacing: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+article .quation{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+article{
+    background: white;
+    padding: 6px 12px;
+    border-radius: 3px;
+    min-height: 50px;
+    margin: 12px 0px
+}
+article .answer-holder{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    background: white;
+    margin-top: 12px;
+    min-height: 50pxs;
+    padding: 6px 10px;
+} 
+.footer nav{
+    display: flex;
+    gap: 5px;
+}
+.OneQDiv{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.OneQDiv input{
+    outline: none;
+}
+.answer-holder .OneQDiv:not(:last-child){
+    margin-bottom: 5px;
+}
+.Qcircle{
+    border: solid 1px black;
+    list-style-type: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.finalMessage{
+    text-transform: capitalize;
+    background: white;
+    padding: 6px 10px;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+.active-quation{
+    background: #008eff;
+    border-color: #008eff;
+}
+/* media queries */
+@media(max-width:600px){
+    section{
+        width: auto;
+    }
+}
+@media(max-width:400px){
+    section{
+        font-size: var(--font-size-14px);
+        min-width: 256px;
+    }
+    .SubmitAnswer{
+        font-size: 14px;
+    }
+    .Qcircle{
+        width: 12px;
+        height: 12px;
+    }
+}

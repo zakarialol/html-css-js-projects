@@ -1,0 +1,33 @@
+.paragraph{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+button{
+    background-color: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.button-up{
+    margin-bottom: 20px;
+}
+p{
+    font-weight: bold;
+    font-size: 16pxs;
+}
+.main{
+    text-align: center;
+}
+button:focus{
+    outline:solid 1px green;
+}
+#sum{
+    color: green;
+}
+.main .logo{
+    align-content: center;
+    font-size: 30px;
+    padding: 0px 5px;
+    color: green;
+    font-weight: bold;
+}

@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+section .title{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-align: center;
+}
+section article input{
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+section article .p-word{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+section button{
+    background: #dcdcff;
+    color: black;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section .div-countainer{
+    display: flex ;
+    gap: 10px ;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.first-article{
+    display: flex;
+    align-items: center;
+}
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.error{
+    color: #bf0d00;
+    margin-top: 5px;
+}
+.txtgen{
+    text-align: center;
+    color: gray;
+    padding: 15px 10%;
+    font-size: 15px;
+}

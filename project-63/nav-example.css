@@ -1,0 +1,121 @@
+*{
+    padding:0px ;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+   box-shadow: 0px 1px 10px 1px #acacac;
+   position: relative;
+}
+header .header-nav{
+    text-transform: capitalize;
+    /* letter-spacing: 2px; */
+    margin: 0px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+header nav{
+    display: flex;
+    list-style-type: none;
+    column-gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+    letter-spacing: 2px;
+    color: gray;
+    font-size: 18px;
+}
+header nav li{
+    cursor: pointer;
+}
+
+.header-nav .title{
+    letter-spacing: 2px;
+}
+.header-nav .title p{
+    font-weight: 600;
+    font-size: 22px;
+}
+.header-nav .title p span{
+    color: #3cb2b2;
+}
+
+.header-nav .icon{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 5px;
+}
+.header-nav .icon a{
+    cursor: pointer;
+    color: #3cb2b2;
+    }
+#navToHide a{
+    text-decoration: none;
+    color: gray;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+header .toggle-bar i{
+    font-weight: bold;
+    color: #3cb2b2;
+
+}
+header .toggle-bar{
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 25px;
+    display: none;
+}
+header .toggle-bar:hover{
+    transform: rotate(90deg);
+    transition: 1s;
+}
+header .toggle-bar:hover .fa-bars{
+    color: black;
+}
+.display{
+    opacity: 1;
+}
+#navToHide a:hover{
+    background: #dddddd;
+    color: black;
+    transition: all .5s;
+}
+
+@media(max-width:900px){
+    header .header-nav .icon{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+
+    header .toggle-bar{
+        display: block;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        text-align: left;
+        position: absolute;
+        top: 100%;
+        background: white;
+        width: 100%;
+        left: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 1s ease,opacity 1s ease;
+        height: 0px;
+    }
+    header nav li{
+        padding-left: 5%;
+    }
+    
+}

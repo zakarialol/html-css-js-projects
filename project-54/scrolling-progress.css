@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+main{
+    background: #9a2828;
+    height: 200vh;
+}
+.progress-holder{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+.progress-percent{
+    display: block;
+    height: 100%;
+    background: green;
+}

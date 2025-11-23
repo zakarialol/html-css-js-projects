@@ -1,0 +1,192 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --font-size-12px : 12px;
+    --font-size-20px: 20px;
+    --background-color-blue : #2196F3;
+    --color-white:white;
+    --min-height:30px;
+    --Btn-BackgColor-green:#009a00;
+    --background-white:white;
+}
+main{
+    margin: 0 auto;
+}
+.flex-center{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+header{
+    color: var(--color-white);
+    background: var(--background-color-blue);
+    min-height: var(--min-height);
+    text-transform: capitalize;
+}
+body{
+    background-color: #f0f0f0;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.game-describe{
+    background: var(--color-white);
+    text-align: center;
+    padding: 10px;
+}
+.playButton{
+    width: 100%;
+    background: var(--Btn-BackgColor-green);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 0px;
+    /* margin: 10px 0px; */
+    text-transform: capitalize;
+}
+section input[type='text']{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 7px;
+    outline-color:var(--background-color-blue);
+}
+.words-container .p-holder{
+    text-align: center;
+    background: var(--background-white);
+}
+.footer{
+    gap: 5px;
+    justify-content: space-between;
+    background-color: var(--background-white);
+    text-transform: capitalize;
+    padding: 10px;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.GameOverText{
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.words-container .word{
+    background: var(--background-color-blue);
+    display: inline-block;
+    padding: 3px 9px;
+    min-width: 60px;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin:5px;
+}
+.words-container{
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px 5px
+}
+.PlayGameContainer .CurrentWord{
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    margin: 10px 0px;
+    background: white;
+    padding: 5px 0px;
+    color: var(--background-color-blue);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.PlayGameContainer{
+    margin: 10px 0px;
+    background-color: white;
+}
+.currentwordDiv{
+    background: white;
+    /* margin: 10px 0px;
+    padding: 5px 0px; */  
+}
+#inputType{
+    display: none;
+}
+.color_Green{
+    color: green;
+}
+.blue{
+    color: var(--background-color-blue);
+}
+.startAgainBtn{
+    background: none;
+    border: none;
+    background: black;
+    color: var(--background-white);
+    padding: 5px 5px;
+    min-width: 90px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 15px 0px 10px 0px;
+}
+.currentwordDiv .victory{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.score-inside-victory{
+    text-align: center;
+    font-size: 12px;
+    margin: -5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.footer .restart{
+    order: 1;
+}
+.footer .score{
+    order: 2;
+}
+.footer .restart{
+    border: none;
+    background: green;
+    border-radius: 5px;
+    padding: 3px 10px;
+    min-width: 50px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px .5px black;
+    text-transform: capitalize;
+}
+@media (min-width:1200px){
+    header{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media(min-width:750px){
+    .footer .restart{
+        min-width: 120px;
+        padding: 5px;
+    }
+}
+@media(min-width:1100px){
+    main header{
+        width: 50%;
+        margin: 0 auto;
+    }
+    section{
+        width: 50%;
+    }
+}

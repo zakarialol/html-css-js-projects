@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.video-div{
+    height: 100vh;
+    position: relative;
+}
+#play-pause{
+    background: white;
+    border: solid 1px #03A9F4;
+    padding: 3px 10px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    color: #03A9F4;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+#myvideo{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-filter{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 150 136 / 50%);
+}
+.title-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.play-pause::after{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+.play-pause.move-after::after{
+    left: 50%;
+}

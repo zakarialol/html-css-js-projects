@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+th{
+    text-align: right;
+    font-weight: normal;
+}
+input[type=text]{
+    outline: none;
+}

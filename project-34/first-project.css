@@ -1,0 +1,65 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main header{
+    background: white;
+    box-shadow: 0px 1px 4px 0px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30%;
+    text-transform: capitalize;
+}
+
+main header nav{
+    display: flex;
+    list-style-type: none;
+    column-gap: 15px;
+    padding: 10px 0px;
+}
+header .color-flipper-p{
+    color: aqua;
+}
+footer{
+    background-color: black;
+    height: 100px;
+}
+
+main .main-div{
+    height: calc(100vh - 138px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main-div input[type=button]{
+    background: none;
+    border: solid 1px black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    box-shadow: 0px 0px 2px;
+    cursor: pointer;
+}
+.main-div .center-div p{
+    font-weight: bold;
+    font-size: 25px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+nav #hex{
+    cursor: pointer;
+}
+#simple ,#normal{
+    cursor: pointer;
+}
+#btn-click{
+    background-color: black;
+    color: white;
+}

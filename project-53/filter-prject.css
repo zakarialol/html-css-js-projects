@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+main nav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+nav li{
+    list-style-type: none;
+    padding: 5px 20px;
+    background: #ccc;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+main .itemsHolder{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+}
+.itemsHolder p{
+    text-align: center;
+    align-content: center;
+    height: 120px;
+    color: white;
+    /* background: rebeccapurple; */
+}
+.active{
+    background: red;
+    color: white;
+}
+nav li:hover{
+    background: #03A9F4;
+    color: white;
+}

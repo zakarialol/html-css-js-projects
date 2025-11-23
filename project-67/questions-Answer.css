@@ -1,0 +1,63 @@
+*{
+    padding: 0px ;
+    margin: 0px ;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main .main{
+    width: 500px;
+}
+.questions .Q-div{
+        padding: 0px 10px;
+        text-transform: capitalize;
+        box-shadow: 0px 0px 5px 0px gray;
+        border-radius: 5px;
+        margin: 20px 0px
+}
+.QTitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: cursive;
+    color: gold;
+}
+.btn-plus,
+.btn-negative{
+    border: 1px solid #009688;
+    color: #009688;
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-plus:hover,.btn-plus:hover{
+    transition: .3s ease;
+    transform: rotate(.25turn);
+}
+.btn-negative:hover{
+    transition: .3s ease;
+    transform: rotate(.5turn);
+}
+.main .lorem{
+    color: gray;
+    border-top: solid 1px gray;
+    padding: 10px 0px;
+}
+.div-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.display{
+    display: none;
+}

@@ -1,0 +1,91 @@
+/* begin of our skills desgin */
+:root{
+    --line-width:0;
+}
+.main-our-skills{
+    padding-bottom: 100px ;
+}
+.main-skills-info{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.skills-details{
+    width: 60%;
+}
+.skills-details .line-info{
+    height: 25px;
+    background-color: #ececec;
+}
+.skills-details .info p{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px 0
+}
+.main-skills-info img{
+    width: 40%;
+}
+.percent-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.percent-div .percent{
+    border: solid 1px #d7d7d7;
+    color: #00A9FF;
+    padding: 3px 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.skills-details .css-line{
+    position: relative;
+}
+.skills-details .css-line::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: var(--line-width);
+    background-color: #00A9FF;
+    transition: width 3s ease-in-out;
+}
+.skills-details .javascript-line{
+    position: relative;
+}
+.skills-details .javascript-line::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: var(--line-width);
+    background-color: #00A9FF;
+    transition: width 3s ease-out;
+}
+.skills-details .python-line{
+    position: relative;
+}
+.skills-details .python-line::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: var(--line-width);
+    background-color: #00A9FF;
+    transition: width 3s ease-in;
+}
+.skills-details .html-line{
+    position: relative;
+}
+.skills-details .html-line::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: var(--line-width);
+    background-color: #00A9FF;
+    transition: width 3s ease;
+}

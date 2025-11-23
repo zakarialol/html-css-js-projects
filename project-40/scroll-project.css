@@ -1,0 +1,232 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header styling */
+
+header .logo{
+    width: 50px;
+}
+
+header .logo img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    position: relative;
+}
+
+header nav{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+nav a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.nav-bar-button i{
+    font-weight: bold;
+    font-size: 30px;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar-button{
+    border: none;
+    background: none;
+    color: rgb(0, 174, 174);
+    display: none;
+    cursor: pointer;
+}
+
+/* home styling  */
+main .home-background{
+    background-image: url(./img/cat-05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .home{
+    color: white;
+}
+
+.home-center-text .home-section{
+    width: 400px;
+}
+
+.home-center-text{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-center-text .home-section .head{
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 12px;
+}
+
+.home-center-text .home-section .lorem{
+    margin: 20px 0px;
+}
+.home-center-text .home-section .explore-tours{
+    border: solid 2px;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 6px 30px;
+    cursor: pointer;
+}
+.height-650{
+    height: 650px;
+}
+.clr-aqua{
+    color: aqua;
+}
+.title-styling{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    word-spacing: 15px;
+    color: red;
+}
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dodgerblue;
+    color: white;
+}
+footer p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.about-us{
+    background: rgb(156 156 156 /10%);
+}
+.header-position-fixed{
+    background: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 10px -4px gray;
+    transition: all 0.5s;
+}
+.toggle-nav-menu-li{
+    height: 40px;
+    opacity: 1;
+}
+
+.btnScrollTop{
+    position: fixed;
+    right: 15px;
+    top: 90vh;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    animation: btnScall 2s infinite;
+}
+
+.btnScrollTop img{
+    width: 100%;
+    height: 100%;
+}
+.display-block{
+    display: block;
+}
+ /* animation for btn scroll top */
+
+@keyframes btnScall{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.1);
+    }
+}
+/* //media querries for responsive design */
+
+@media( max-width:500px){
+
+    .home-center-text .home-section .head{
+        font-size: 20px;
+    }
+
+    .home-center-text .home-section .lorem{
+        font-size: 12px;
+    }
+
+    .home-center-text .home-section .explore-tours{
+        font-size: 12px;
+        padding: 2px 12px;
+    }
+
+    .home-center-text .home-section{
+        width: 250px;
+    }
+
+    .title-styling{
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .nav-bar-button{
+        display: block;
+    }
+
+
+     header nav{
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 5px;
+        padding-left: 8px;
+        background: white;
+        box-shadow: 0px 0px 5px 0px gray;
+        gap: 0px;
+        /* margin-bottom: 20px; */
+     }
+
+     header nav li{
+        color: black;
+        padding: 10px 0px;
+     }
+
+     .home header{
+        align-items: normal;
+        flex-direction: column;
+     }
+
+     header nav a{
+         height: 0px;
+         overflow: hidden;
+         transition: all 0.5s ease;
+     }
+}

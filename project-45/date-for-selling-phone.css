@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main article{
+    width: 650px;
+    display: flex;
+    margin: 0 auto;
+}
+
+article .img{
+    flex-basis: 45%;
+}
+
+article .iphone-info{
+    flex-basis: 55%;
+    padding: 20px;
+}
+
+article .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.for-date{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 5px;
+}
+.for-date .date{
+    color: white;
+    font-weight: bold;
+    background: #242424;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 5px;
+    width: 60px;
+}
+.head-title h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3F51B5;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.textstyle{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.current-time{
+    color: blue;
+}
+.giveway-paragraph{
+    color: red;
+}
+.head-title{
+    margin-bottom: 10px;
+}
+.date p{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expried{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: green;
+}

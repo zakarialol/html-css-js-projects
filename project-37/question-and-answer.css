@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main .question-holder{
+    padding: 20px;
+    border-radius: 5px
+}
+
+.question-holder .Question{
+    box-shadow: 0px 0px 5px -1px gray;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 400px;
+}
+.header-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: monospace;
+    letter-spacing: 1px;
+    color: gold;
+    margin-bottom: 30px;
+}
+.question-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.Q1Text{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.answer_text{
+    font-size: 14px;
+    color: gray;
+    padding-top: 10px;
+    border-top: solid 1px gray;
+
+}
+
+.question-header .btn{
+    border: solid 1px #0087ff;
+    width: 15px;
+    height: 15px;
+    align-content: center;
+    text-align: center;
+    color: #0087ff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.hidden{
+    display: none;
+}
+.hide{
+    max-height: 0px; 
+    overflow: hidden;
+    opacity: 0;
+}
+.unhide{
+    max-height: 100px; 
+    opacity: 1;
+    transition: max-height 2s ease, opacity 1s ease;
+}
+/* HOVER EFFECT FOR BTN */
+
+.question-header .btn:hover{
+    transform: rotate(0.5turn);
+    transition: transform .5s ease;
+}

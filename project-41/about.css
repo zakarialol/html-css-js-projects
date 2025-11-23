@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.about header {
+    text-align: center;
+}
+
+.about header .title{
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about header .lorem{
+    color: gray;
+}
+
+.main-div{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin-top: 10px;
+    gap: 20px;
+}
+.main-div .img img{
+    width: 100%;
+}
+.main-div .img{
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main-div .btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btns button{
+    padding: 4px 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+}
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section{
+    width: 700px;
+    margin: 0px 20px;
+}
+.about-paragraph-section .paragraph{
+    padding: 10px;
+}
+
+.paragraph .span-for-title{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+    border-bottom: 1px black;
+    margin-bottom: 0px;
+    display: block;
+    width: fit-content;
+}
+.button-about.background-white{
+    background: white;
+    outline: solid aqua 1px;
+    margin-right: 1px;
+}
+@media(max-width:500px){
+    main section{
+        width: 300px;
+    }
+    .main-div{
+        display: block;
+    }
+}
